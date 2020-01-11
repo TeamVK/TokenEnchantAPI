@@ -27,7 +27,7 @@ repositories {
 dependencies {
     // ... other dependencies
     compile group: 'org.spigotmc', name: 'spigot', version: spigot_version
-    compile group: 'com.vk2gpz.tokenenchant', name: 'TokenEnchantAPI', version: '15.2.2'
+    compile group: 'com.vk2gpz.tokenenchant', name: 'TokenEnchantAPI', version: '15.2.4'
     // ... other dependencies
 }
 ```
