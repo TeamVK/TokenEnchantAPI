@@ -32,7 +32,7 @@ dependencies {
 }
 ```
 
-## [API Documentation](javadoc/index.html)
+## [API Documentation](http://teamvk.github.io/TokenEnchantAPI/)
 
 ## Sample Custom Enchantments (CEs)
 ### [Extending EnchantHandler]
