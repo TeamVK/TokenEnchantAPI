@@ -32,6 +32,30 @@ dependencies {
 }
 ```
 
+### Maven
+Here is an example of a fragment of the script you can add to your pom.xml.
+
+```
+    <repositories>
+        <!-- TeamVK -->
+        <repository>
+            <id>teamvk-repo</id>
+            <url>https://raw.githubusercontent.com/TeamVK/maven-repository/master/release/</url>
+        </repository>
+
+    </repositories>
+
+    <dependencies>
+        <!-- MergedSpawner -->
+        <dependency>
+            <groupId>com.vk2gpz.tokenenchant</groupId>
+            <artifactId>TokenEnchantAPI</artifactId>
+            <version>16.1.15</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+```
+
 ## [API Documentation](https://teamvk.github.io/TokenEnchantAPI/javadoc/index.html)
 
 ## Sample Custom Enchantments (CEs)
