@@ -50,7 +50,7 @@ Here is an example of a fragment of the script you can add to your pom.xml.
         <dependency>
             <groupId>com.vk2gpz.tokenenchant</groupId>
             <artifactId>TokenEnchantAPI</artifactId>
-            <version>16.1.15</version>
+            <version>16.3.3</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
