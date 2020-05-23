@@ -1,0 +1,15 @@
+Enchants:
+    Sample1:
+      event_map:
+        BlockBreakEvent: "HIGHEST"
+        TEBlockExplodeEvent: "MONITOR"
+      price: 10
+      max: 10
+      speed: 1
+      flicker: true
+      trail: true
+      effect: "STAR"
+      color: 1
+      invalid_in_world:
+      #  - plotworld
+      occurrence: random

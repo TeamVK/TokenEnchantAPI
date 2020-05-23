@@ -59,7 +59,7 @@ Here is an example of a fragment of the script you can add to your pom.xml.
 ## [API Documentation](https://teamvk.github.io/TokenEnchantAPI/javadoc/index.html)
 
 ## Sample Custom Enchantments (CEs)
-### [Extending EnchantHandler]
+### [Extending EnchantHandler](https://teamvk.github.io/TokenEnchantAPI/sample/TE-SampleEnchant/)
 ### [Extending PotionHandler]
 
 ## [Donation](http://PayPal.Me/vk2gpz)
