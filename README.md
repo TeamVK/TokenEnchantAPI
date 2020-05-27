@@ -46,7 +46,7 @@ Here is an example of a fragment of the script you can add to your pom.xml.
     </repositories>
 
     <dependencies>
-        <!-- MergedSpawner -->
+        <!-- TokenEnchantAPI -->
         <dependency>
             <groupId>com.vk2gpz.tokenenchant</groupId>
             <artifactId>TokenEnchantAPI</artifactId>
