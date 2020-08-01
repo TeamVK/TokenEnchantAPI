@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"com.vk2gpz.tokenenchant.api"},{"l":"com.vk2gpz.tokenenchant.event"}]
