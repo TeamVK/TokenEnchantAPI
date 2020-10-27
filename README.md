@@ -27,7 +27,7 @@ repositories {
 dependencies {
     // ... other dependencies
     compile group: 'org.spigotmc', name: 'spigot', version: spigot_version
-    compile group: 'com.vk2gpz.tokenenchant', name: 'TokenEnchantAPI', version: '18.0.0'
+    compile group: 'com.vk2gpz.tokenenchant', name: 'TokenEnchantAPI', version: '18.5.0'
     // ... other dependencies
 }
 ```
@@ -50,7 +50,7 @@ Here is an example of a fragment of the script you can add to your pom.xml.
         <dependency>
             <groupId>com.vk2gpz.tokenenchant</groupId>
             <artifactId>TokenEnchantAPI</artifactId>
-            <version>18.0.0</version>
+            <version>18.5.0</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
