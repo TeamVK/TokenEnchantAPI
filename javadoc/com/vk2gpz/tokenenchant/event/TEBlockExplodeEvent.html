@@ -279,7 +279,7 @@ java.util.Collection&lt;org.bukkit.inventory.ItemStack&gt;&nbsp;drops)</code></t
 <td class="col-first"><code>java.util.Collection&lt;org.bukkit.inventory.ItemStack&gt;</code></td>
 <th class="col-second" scope="row"><code><span class="member-name-link"><a href="#getDrops()">getDrops</a></span>()</code></th>
 <td class="col-last">
-<div class="block">Returns a list of blocks flagged as "to be exploded".</div>
+<div class="block">Returns a list of ItemStack object to be dropped.</div>
 </td>
 </tr>
 <tr class="row-color" id="i3">
@@ -420,6 +420,7 @@ java.util.Collection&lt;org.bukkit.inventory.ItemStack&gt;&nbsp;drops)</span></d
 <dd><code>item</code> - An item a player was holding.</dd>
 <dd><code>exemptions</code> - A list of materials, should be exempt from explosion.</dd>
 <dd><code>trigger</code> - A name of the Enchantment that triggered this event.</dd>
+<dd><code>drops</code> - A list of ItemStack to be dropped.</dd>
 </dl>
 </section>
 </li>
@@ -616,10 +617,10 @@ float&nbsp;yield)</span></div>
 <section class="detail" id="getDrops()">
 <h3>getDrops</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">java.util.Collection&lt;org.bukkit.inventory.ItemStack&gt;</span>&nbsp;<span class="member-name">getDrops</span>()</div>
-<div class="block">Returns a list of blocks flagged as "to be exploded".</div>
+<div class="block">Returns a list of ItemStack object to be dropped.</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>a list of Block object to be exploded.</dd>
+<dd>a list of ItemStack object to be dropped.</dd>
 </dl>
 </section>
 </li>
