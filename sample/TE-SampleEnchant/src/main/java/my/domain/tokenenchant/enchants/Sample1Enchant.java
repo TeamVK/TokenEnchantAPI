@@ -39,15 +39,25 @@ public class Sample1Enchant extends EnchantHandler {
 	 * This is the firework effect being used.
 	 */
 	private FireworkEffect effect;
-	
-	
+
+
 	/**
 	 * @param plugin TokenEnchant plugin, which wil be automatically provided by the TokenEnchant
 	 */
 	public Sample1Enchant(TokenEnchantAPI plugin) throws InvalidTokenEnchantException {
-		super(plugin);
+		this(plugin, null, null);
+	}
+
+	/**
+	 * @param plugin TokenEnchant plugin, which wil be automatically provided by the TokenEnchant
+	 * @param name name the name of the custom enchant.
+	 * @param config FileConfiguration object pointing to this CE's config file.
+	 */
+	public BadPotionEnchant(TokenEnchantAPI plugin, String name, FileConfiguration config) throws InvalidTokenEnchantException {
+		super(plugin, name, config);
 		loadConfig(); // don't forget to invoke loadConfig() !!
 	}
+
 	
 	/**
 	 * If your custom enchant require configuration,
