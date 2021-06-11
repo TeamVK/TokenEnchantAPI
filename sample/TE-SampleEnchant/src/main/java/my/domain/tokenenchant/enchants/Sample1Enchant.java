@@ -16,6 +16,7 @@ import org.bukkit.*;
 import org.bukkit.FireworkEffect.*;
 import org.bukkit.block.*;
 import org.bukkit.command.*;
+import org.bukkit.configuration.file.*;
 import org.bukkit.event.*;
 import org.bukkit.event.block.*;
 import org.bukkit.entity.*;
@@ -53,7 +54,7 @@ public class Sample1Enchant extends EnchantHandler {
 	 * @param name name the name of the custom enchant.
 	 * @param config FileConfiguration object pointing to this CE's config file.
 	 */
-	public BadPotionEnchant(TokenEnchantAPI plugin, String name, FileConfiguration config) throws InvalidTokenEnchantException {
+	public Sample1Enchant(TokenEnchantAPI plugin, String name, FileConfiguration config) throws InvalidTokenEnchantException {
 		super(plugin, name, config);
 		loadConfig(); // don't forget to invoke loadConfig() !!
 	}
@@ -69,22 +70,22 @@ public class Sample1Enchant extends EnchantHandler {
 		super.loadConfig();
 		
 		// read speed data.
-		this.speed = this.config.getInt("Potions.Sample.speed", 1);
+		this.speed = this.config.getInt("Enchants.Sample.speed", 1);
 		
 		// building the firework effect
 		FireworkEffect.Builder builder = FireworkEffect.builder();
-		Boolean flicker = this.config.getBoolean("Potions.Sample.flicker", true);
+		Boolean flicker = this.config.getBoolean("Enchants.Sample.flicker", true);
 		if (flicker)
 			builder = builder.withFlicker();
 		
-		Boolean trail = this.config.getBoolean("Potions.Sample.trail", true);
+		Boolean trail = this.config.getBoolean("Enchants.Sample.trail", true);
 		if (trail)
 			builder = builder.withTrail();
 		
-		String type = this.config.getString("Potions.Sample.effect", "STAR");
+		String type = this.config.getString("Enchants.Sample.effect", "STAR");
 		builder = builder.with(FireworkEffect.Type.valueOf(type));
 		
-		Color color = getColor(this.config.getInt("Potions.Sample.color", 1));
+		Color color = getColor(this.config.getInt("Enchants.Sample.color", 1));
 		builder = builder.withColor(color);
 		
 		this.effect = builder.build();
@@ -136,7 +137,7 @@ public class Sample1Enchant extends EnchantHandler {
 			return;
 		}
 
-		launchFirework(broken.getLocation(), ei.getLevel(), this.speed, this.effect);
+		launchFirework(broken.getLocation(), level, this.speed, this.effect);
 	}
 	
 	private void launchFirework(Location l, int level, int speed, FireworkEffect effect) {

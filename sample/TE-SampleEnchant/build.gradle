@@ -8,9 +8,9 @@ apply plugin: "com.github.unafraid.gradle.git-repo-plugin"
 defaultTasks 'clean', 'jar' //, 'publish'
 
 ext {
-    spigot_version = '1.16.1'
+    spigot_version = '1.16.5'
     spigotapi_version = spigot_version + '-R0.1-SNAPSHOT'
-    tokenenchantapi_version = '18.7.1'
+    tokenenchantapi_version = '18.18.1'
 }
 
 sourceCompatibility = org.gradle.api.JavaVersion.VERSION_1_8
