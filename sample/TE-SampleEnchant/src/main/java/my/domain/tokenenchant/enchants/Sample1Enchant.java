@@ -1,4 +1,4 @@
-package my.domain.tokenenchant.potions;
+package my.domain.tokenenchant.enchants;
 
 /*
   This file is part of TE-Sample2Enchant
