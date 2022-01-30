@@ -46,20 +46,10 @@ public class Sample1Enchant extends EnchantHandler {
 	 * @param plugin TokenEnchant plugin, which wil be automatically provided by the TokenEnchant
 	 */
 	public Sample1Enchant(TokenEnchantAPI plugin) throws InvalidTokenEnchantException {
-		this(plugin, null, null);
+		super(plugin);
+		loadConfig();
 	}
 
-	/**
-	 * @param plugin TokenEnchant plugin, which wil be automatically provided by the TokenEnchant
-	 * @param name name the name of the custom enchant.
-	 * @param config FileConfiguration object pointing to this CE's config file.
-	 */
-	public Sample1Enchant(TokenEnchantAPI plugin, String name, FileConfiguration config) throws InvalidTokenEnchantException {
-		super(plugin, name, config);
-		loadConfig(); // don't forget to invoke loadConfig() !!
-	}
-
-	
 	/**
 	 * If your custom enchant require configuration,
 	 * you can read those parameter in this method.
