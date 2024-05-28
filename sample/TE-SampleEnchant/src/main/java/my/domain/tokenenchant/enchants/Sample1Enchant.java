@@ -1,4 +1,4 @@
-package my.domain.tokenenchant.enchants;
+package my.domain.tokenenchant.potions;
 
 /*
   This file is part of TE-Sample2Enchant
@@ -28,7 +28,7 @@ import org.bukkit.potion.*;
 import org.bukkit.metadata.*;
 import org.bukkit.scheduler.*;
 
-import com.vk2gpz.tokenenchant.api.*;
+import com.vk2gpz.tokenenchant.api.EnchantHandler;
 
 public class Sample1Enchant extends EnchantHandler {
 	/**
@@ -45,11 +45,21 @@ public class Sample1Enchant extends EnchantHandler {
 	/**
 	 * @param plugin TokenEnchant plugin, which wil be automatically provided by the TokenEnchant
 	 */
-	public Sample1Enchant(TokenEnchantAPI plugin) throws InvalidTokenEnchantException {
-		super(plugin);
-		loadConfig();
+	public Sample1Enchant(ITokenEnchant plugin) throws InvalidTokenEnchantException {
+		this(plugin, null, null);
 	}
 
+	/**
+	 * @param plugin TokenEnchant plugin, which wil be automatically provided by the TokenEnchant
+	 * @param name name the name of the custom enchant.
+	 * @param config FileConfiguration object pointing to this CE's config file.
+	 */
+	public Sample1Enchant(ITokenEnchant plugin, String name, FileConfiguration config) throws InvalidTokenEnchantException {
+		super(plugin, name, config);
+		loadConfig(); // don't forget to invoke loadConfig() !!
+	}
+
+	
 	/**
 	 * If your custom enchant require configuration,
 	 * you can read those parameter in this method.
