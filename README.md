@@ -2,59 +2,13 @@
 
 This API allows you to write your own Custom Enchantment effect. Your custom enchantment will automatically be searched and loaded into TokenEnchantment when you place your .jar file in "TokenEnchant/enchants" folder.
 
-## Using maven repository
-`TokenEnchantAPI` is hosted on TeamVK's public maven repository and you can reference it in your dev environment.
+You can download TokenEnchantAPI.zip from [here](https://github.com/TeamVK/TokenEnchantAPI/releases).  In the zip file, you will find the followings:
+* TokenEnchantAPI-x.x.x.jar : .jar file containing API and you can place in lib/ folder in your gradle/maven project.
+* javadoc/ : Javadoc files of the API
+* TE-SampleEnchant : an example custom enchantment
+* TEAddon-SimpleLore : an example addon.
 
-### Gradle
-Here is an example of a fragment of the script you can add to your build.gradle.
 
-```
-plugins {
-    id "com.github.unafraid.gradle.git-repo-plugin" version "2.0.4.1"
-    id "java"
-    id "maven-publish"
-}
-
-// this will allow you to use github() to specify the github hosted maven repository
-apply plugin: "com.github.unafraid.gradle.git-repo-plugin"
-
-repositories {
-    jcenter()
-    mavenCentral()
-    github("teamvk", "maven-repository", "origin", "master", "release")
-}
-
-dependencies {
-    // ... other dependencies
-    compile group: 'org.spigotmc', name: 'spigot', version: spigot_version
-    compile group: 'com.vk2gpz.tokenenchant', name: 'TokenEnchantAPI', version: '18.37.1'
-    // ... other dependencies
-}
-```
-
-### Maven
-Here is an example of a fragment of the script you can add to your pom.xml.
-
-```
-    <repositories>
-        <!-- TeamVK -->
-        <repository>
-            <id>teamvk-repo</id>
-            <url>https://raw.githubusercontent.com/TeamVK/maven-repository/master/release/</url>
-        </repository>
-
-    </repositories>
-
-    <dependencies>
-        <!-- TokenEnchantAPI -->
-        <dependency>
-            <groupId>com.vk2gpz.tokenenchant</groupId>
-            <artifactId>TokenEnchantAPI</artifactId>
-            <version>18.37.1</version>
-            <scope>provided</scope>
-        </dependency>
-    </dependencies>
-```
 
 ## [API Documentation](https://teamvk.github.io/TokenEnchantAPI/javadoc/index.html)
 
