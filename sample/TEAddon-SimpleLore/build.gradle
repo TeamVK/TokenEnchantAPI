@@ -14,7 +14,7 @@ defaultTasks 'clean', 'jar' //, 'publish'
 ext {
     spigot_version = '1.20.6'
     spigotapi_version = spigot_version + '-R0.1-SNAPSHOT'
-    tokenenchantapi_version = '23.8.0'
+    tokenenchantapi_version = '23.9.0'
 }
 
 sourceCompatibility = org.gradle.api.JavaVersion.VERSION_1_8
