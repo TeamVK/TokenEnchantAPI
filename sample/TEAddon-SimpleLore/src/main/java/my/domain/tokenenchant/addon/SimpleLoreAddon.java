@@ -66,9 +66,9 @@ public class SimpleLoreAddon extends EnchantLoreHandler {
 
         if (VersionUtil.geqVersion(1, 8)) {
             if (enchants.size() < 1) {
-                im.removeItemFlags(ItemFlag.HIDE_ENCHANTS);
+                EnchantUtil.showEnchants(im, is.getType());
             } else {
-                im.addItemFlags(ItemFlag.HIDE_ENCHANTS);
+                EnchantUtil.hideEnchants(im, is.getType());
             }
         }
 
