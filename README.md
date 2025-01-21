@@ -10,7 +10,7 @@ You can download TokenEnchantAPI.zip from [here](https://github.com/TeamVK/Token
 
 
 
-## [API Documentation](https://teamvk.github.io/TokenEnchantAPI/javadoc/index.html)
+## [API Documentation](https://github.com/teamvk/TokenEnchantAPI/javadoc/index.html)
 
 ## Sample Custom Enchantments (CEs)
 ### [Extending EnchantHandler](sample/TE-SampleEnchant/)
